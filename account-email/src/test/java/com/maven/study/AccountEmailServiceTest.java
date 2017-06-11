@@ -1,4 +1,4 @@
-package com.juvenxu.mvnbook.account.email;
+package com.maven.study;
 
 import static junit.framework.Assert.assertEquals;
 

@@ -1,4 +1,4 @@
-package com.juvenxu.mvnbook.account.email;
+package com.maven.study;
 
 public interface AccountEmailService
 {
