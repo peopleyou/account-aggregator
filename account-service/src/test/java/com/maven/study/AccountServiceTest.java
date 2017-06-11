@@ -1,23 +1,21 @@
 package com.maven.study;
 
-import static junit.framework.Assert.*;
-
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.mail.Message;
-
+import com.icegreen.greenmail.util.GreenMail;
+import com.icegreen.greenmail.util.GreenMailUtil;
+import com.icegreen.greenmail.util.ServerSetup;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.icegreen.greenmail.util.GreenMail;
-import com.icegreen.greenmail.util.GreenMailUtil;
-import com.icegreen.greenmail.util.ServerSetup;
-import com.juvenxu.mvnbook.account.captcha.AccountCaptchaService;
+import javax.mail.Message;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.fail;
 
 public class AccountServiceTest
 {
