@@ -1,7 +1,5 @@
 package com.maven.study;
 
-import org.junit.Test;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -9,7 +7,7 @@ import static junit.framework.Assert.assertFalse;
 
 public class RandomGeneratorTest
 {
-    @Test
+//    @Test
     public void testGetRandomString()
         throws Exception
     {

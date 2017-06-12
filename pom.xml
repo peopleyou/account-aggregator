@@ -16,4 +16,24 @@
         <module>account-service</module>
         <module>account-web</module>
     </modules>
+
+    <scm>
+        <connection>scm:git:https://github.com/peopleyou/account-aggregator</connection>
+        <developerConnection>scm:git:https://github.com/peopleyou/account-aggregator</developerConnection>
+        <url>https://github.com/peopleyou/account-aggregator</url>
+    </scm>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <configuration>
+                        <tagBase>https://github.com/peopleyou/account-aggregator/tags</tagBase>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
