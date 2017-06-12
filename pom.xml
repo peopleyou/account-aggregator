@@ -18,9 +18,7 @@
     </modules>
 
     <scm>
-        <connection>scm:git:https://peopleyou@github.com/peopleyou/account-aggregator</connection>
-        <developerConnection>scm:git:https://peopleyou@github.com/peopleyou/account-aggregator</developerConnection>
-        <url>https://github.com/peopleyou/account-aggregator</url>
+        <developerConnection>https://peopleyou@github.com/peopleyou/account-aggregator</developerConnection>
     </scm>
 
     <build>
