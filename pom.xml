@@ -17,24 +17,6 @@
         <module>account-web</module>
     </modules>
 
-    <scm>
-        <developerConnection>scm:git:https://peopleyou@github.com/peopleyou/account-aggregator</developerConnection>
-    </scm>
-
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-release-plugin</artifactId>
-                    <configuration>
-                        <tagBase>https://github.com/peopleyou/account-aggregator/tags</tagBase>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
-
     <distributionManagement>
         <repository>
             <id>releases</id>
@@ -47,4 +29,25 @@
             <url>http://localhost:9903/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
+
+    <scm>
+        <developerConnection>scm:git:https://peopleyou@github.com/peopleyou/account-aggregator</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <configuration>
+                        <useReleaseProfile>false</useReleaseProfile>
+                        <autoVersionSubmodules>true</autoVersionSubmodules>
+                        <tagBase>https://github.com/peopleyou/account-aggregator/tags</tagBase>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
