@@ -3,7 +3,7 @@
 
     <groupId>com.maven.study</groupId>
     <artifactId>account-aggregator</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3</version>
     <packaging>pom</packaging>
     <name>Account Aggregator</name>
 
@@ -72,7 +72,7 @@
         <connection>scm:git:peopleyou@github.com/peopleyou/account-aggregator</connection>
         <developerConnection>scm:git:https://peopleyou@github.com/peopleyou/account-aggregator</developerConnection>
         <url>scm:git:peopleyou@github.com/peopleyou/account-aggregator/tree/master</url>
-        <tag>HEAD</tag>
+        <tag>account-aggregator-1.0.3</tag>
     </scm>
 
     <build>
