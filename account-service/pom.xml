@@ -42,10 +42,38 @@
         </dependency>
     </dependencies>
 
+    <!--profiles-->
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <db.driver>com.mysql.jdbc.Driver</db.driver>
+                <db.url>jdbc:mysql://192.168.1.100:3306/dev</db.url>
+                <db.username>dev-username</db.username>
+                <db.password>dev-password</db.password>
+            </properties>
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <db.driver>com.mysql.jdbc.Driver</db.driver>
+                <db.url>jdbc:mysql://192.168.1.100:3306/test</db.url>
+                <db.username>test-username</db.username>
+                <db.password>test-password</db.password>
+            </properties>
+        </profile>
+    </profiles>
+
     <build>
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <testResources>
             <testResource>
-                <directory>src/test/resources</directory>
+                <directory>${project.basedir}/src/test/resources</directory>
                 <filtering>true</filtering>
             </testResource>
         </testResources>
